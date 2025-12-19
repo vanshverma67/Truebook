@@ -1,11 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>TrueBook</title>
 </head>
+
 <body>
-    
+    <div class="nav">
+        <div class="logo">
+            <h1> True <span style="color: orangered">Book</span></h1>
+        </div>
+        <div id="selectedCompanyBox"></div>
+
+        <a href="createcompany.html">
+            <button class="btn">Create Company</button>
+        </a>
+    </div>
+    <hr class="hrline">
+    <div class="container">
+        <div class="slid-bar">
+            <button class="slide-btn"><span><i class="fa-etch fa-solid fa-building"></i></span> Create</button>
+            <button class="slide-btn"></a><span><i class="fa-solid fa-receipt"></i></span>Alter</button>
+            <button class="slide-btn" id="btnCompany"><span><i class="fa-etch fa-solid fa-building"></i></span> Company</button>
+            <button class="slide-btn"onclick="Voucherpage()"></a><span><i class="fa-solid fa-receipt"></i></span>Vouchers</button>
+            <button class="slide-btn" id="btnDaybook"><span><i class="fa-chisel fa-regular fa-calendar"></i></span>DayBook</button>
+            <button class="slide-btn"><span><i class="fa-solid fa-building-columns"></i></span> Banking</button>
+            <button class="slide-btn"><span><i class="fa-solid fa-chart-column"></i></span>Balance Sheet</button>
+            <button class="slide-btn"> <span><i class="fa-solid fa-chart-line"></i></span>Profit & Loss A/c</button>
+            <button class="slide-btn"><span><i class="fa-regular fa-folder-closed"></i></span>Reports</button>
+            <button class="slide-btn quitbtn"><span><i class="fa-regular fa-circle-xmark"></i></span>Quit</button>
+        </div>
+
+        <div class="main" id="main"></div>
+    </div>
 </body>
+<script src="../JavaScript/company.js"></script>
 </html>

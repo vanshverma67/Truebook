@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Company - TrueBook</title>
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+<body>
+    <div class="form-container">
+ <div class="form-group">
+   <h1>Create Company</h1>
+ </div>
+ <div class="form-group">
+    <!-- <p><p>Enter your business details below</p></p> -->
+ </div>
+        <!-- Row 1 -->
+        <div class="form-group">
+            <label>Company Name</label>
+            <input type="text" placeholder="Enter Company Name" id="Companyname">
+        </div>
+        <div class="form-group">
+            <label>Financial Year Start</label>
+            <input type="date" id="finstartdate">
+        </div>
+
+        <!-- Row 2 -->
+        <div class="form-group">
+            <label>Mailing Name</label>
+            <input type="text" placeholder="Enter Mailing Name" id="malingname">
+        </div>
+        <div class="form-group">
+            <label>Financial Year End</label>
+            <input type="date" id="finenddate">
+        </div>
+
+        <!-- Row 3 -->
+        <div class="form-group">
+            <label>Address</label>
+            <textarea placeholder="Enter Address" id="Adress"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Currency</label>
+            <select id="Currency">
+                <option value="INR">Rupees (INR)</option>
+                <option value="USD">USD</option>
+                <option value="EUR">Euro</option>
+            </select>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="form-group">
+            <label>Country</label>
+            <input type="text" placeholder="Enter Country" id="Country">
+        </div>
+        <div class="form-group">
+            <label>State</label>
+            <select id="state">
+                <option value="">Select State</option>
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Karnataka">Karnataka</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="form-group">
+            <label>Pincode</label>
+            <input type="text" placeholder="Enter Pincode" id="Pincode">
+        </div>
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="text" placeholder="Enter Mobile Number" id="phonenumber">
+        </div>
+
+        <!-- Row 6 -->
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Enter Email" id="email">
+        </div>
+        <!-- Buttons -->
+        <div class="form-buttons">
+            <button class="btn btn-cancel">Cancel</button>
+            <button class="btn btn-save">Save</button>
+        </div>
+    </div>
+</body>
+<script src="../JavaScript/company.js"></script>
+</html>
