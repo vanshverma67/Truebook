@@ -184,4 +184,38 @@ textarea {
   }
 }
 
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: #f5f5f5;
+  font-weight: bold;
+}
+
+.company-sub-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: #e9ecef;
+}
+
+.company-list {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.company-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.company-row button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
   

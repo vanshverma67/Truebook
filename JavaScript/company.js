@@ -1,48 +1,21 @@
 
-document.querySelector(".btn-save").addEventListener('click',()=>{
+document.getElementById('btnCompany').addEventListener('click',()=>{
+ let mainDiv = document.getElementById('main');
+ mainDiv.innerHTML =`
+   <div class="company-header">
+        <h2 id="selectedCompanyName">No Company Selected</h2>
+        <span id="lastUpdate">Last Update: --</span>
+      </div>
 
+      <!-- Sub Header -->
+      <div class="company-sub-header">
+        <span>Company Name</span>
+        <span>Last Updated</span>
+      </div>
 
-let companyName = document.getElementById("Companyname").value;
-let mailingName = document.getElementById("malingname").value;
-let address = document.getElementById("Adress").value;
-let state = document.getElementById("state").value;
-let country = document.getElementById("Country").value;
-let pincode = document.getElementById("Pincode").value;
-let mobile = document.getElementById("phonenumber").value;
-let email = document.getElementById("email").value;
-let finacialyearstart = document.getElementById("finstartdate").value;
-let finacialyearend = document.getElementById("finenddate").value;
-let currancy = document.getElementById("Currency").value;
-// ====btn select & store in variraybale====
-;
-// === Craete object form  details convert in object====
-let company = {
-  companyName: companyName,
-  mailingName: mailingName,
-  address: address,
-  country: country,
-  state: state,
-  pincode: pincode,
-  mobile: mobile,
-  email: email,
-  finacialyearstart: finacialyearstart,
-  finacialyearend: finacialyearend,
-  currancy: currancy,
-  createdAt: new Date().toISOString()
-};
-   // 🔹 Get old companies (array)
-  let companies = JSON.parse(localStorage.getItem("companies"));
-
-  // 🔹 If first company
-  if (!Array.isArray(companies)) {
-    companies = [];
-  }
-
-  // 🔹 Add new company
-  companies.push(company);
-
-  // 🔹 Save back to localStorage
-  localStorage.setItem("companies", JSON.stringify(companies));
-
-  alert("Company successfully saved ✅");
- });
+      <!-- Company List -->
+      <div class="company-list" id="companyList">
+        <!-- companies yahan aayengi -->
+      </div>
+ `
+});
