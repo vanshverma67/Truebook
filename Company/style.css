@@ -201,9 +201,12 @@ textarea {
 }
 
 .company-list {
-  height: 300px;
-  overflow-y: auto;
+  height: 400px;
+  overflow-y: scroll;
   border: 1px solid #ccc;
+}
+.company-list::-webkit-scrollbar{
+  display: none;
 }
 
 .company-row {
@@ -217,5 +220,114 @@ textarea {
   padding: 5px 10px;
   cursor: pointer;
 }
+/* ===== DAYBOOK IMPROVED DESIGN ===== */
+
+.bokhead {
+  width: 100%;
+  height: 55px;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.bokhead h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: rgb(23,53,85);
+}
+
+/* Date section */
+.bookdate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.bookdate p {
+  margin: 0;
+}
+
+.bookdate input {
+  width: 120px;
+  padding: 5px 10px;
+  font-size: 13px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+}
+
+/* Hide calendar icon */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* ===== TITLE / FILTER ROW ===== */
+.booktitle {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 1fr 1fr 1fr;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: #e9ecef;
+  font-size: 14px;
+  font-weight: 700;
+  border-bottom: 1px solid #ccc;
+}
+
+.booktitle p {
+  margin: 0;
+}
+
+/* Voucher select */
+.booktitle select {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 4px 6px;
+  font-size: 13px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* ===== ENTRIES AREA ===== */
+.enterys {
+  width: 100%;
+  height: calc(100% - 95px);
+  overflow-y: auto;
+  background-color: #fff;
+}
+
+.enterys::-webkit-scrollbar {
+  width: 6px;
+}
+.enterys::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+/* ===== SINGLE ENTRY ROW (future JS use) ===== */
+.entry-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1.5fr 1fr 1fr 1fr;
+  padding: 8px 15px;
+  font-size: 13px;
+  border-bottom: 1px solid #eee;
+}
+
+.entry-row:hover {
+  background-color: #f5faff;
+}
+
+.entry-row span:last-child,
+.entry-row span:nth-last-child(2) {
+  text-align: right;
+  font-weight: 600;
+}
+
 
   
